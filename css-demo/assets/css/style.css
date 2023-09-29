@@ -1,4 +1,64 @@
+/*  ---------------Box Sizing----------------- starter code */
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+/*  ---------------Box Sizing-----------------*/
 body{
-    background-color: peachpuff;
+    background-color: #f5f0e8;
     font-family: 'Cormorant Garamond', serif;
+    margin:0;
+}
+ 
+header.primary{
+  background: #674f04;
+  color:#ffffff;
+  text-align: center;
+  padding:40px;
+
+text-shadow: 1px 1px #000000;
+}
+
+header.primary h1{
+  font-size: 2.4rem;
+  margin:20px;
+}
+
+header.primary a{
+  color:#000000; 
+  text-decoration:none;
+}
+
+header.primary h2{
+  font-size: 1.4rem;
+}
+
+header.primary nav{
+  max-width: 960px;
+  /*  ---------------MAX WIDTH TIP-----------------*/
+  margin: auto;
+}
+
+header.primary nav ul{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+
+header.primary nav ul li{
+  list-style-type: none;
+}
+
+header.primary nav a{
+  color: #ffffff;
+  text-decoration: none;
+  background-color: black;
+  padding: 8px 16px;
+  border-radius: 15px;
 }
