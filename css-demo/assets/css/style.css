@@ -8,7 +8,19 @@ html {
     box-sizing: inherit;
   }
   
-/*  ---------------Box Sizing-----------------*/
+
+/*  ---------------Responsive Images-----------------*/
+/*in every code*/
+img{
+  max-width: 100%;/*auto sizes all images iaw screen size*/
+}
+/*  ---------------Utility Styles-----------------*/
+.container{
+  width: 80vw; /* moves right hand side over to left */
+  margin: 40px auto;/* centers entire section; auto means left and right*/
+}
+
+/*  ---------------Global Styles-----------------*/
 body{
     background-color: #f5f0e8;
     font-family: 'Cormorant Garamond', serif;
@@ -36,6 +48,7 @@ header.primary a{
 
 header.primary h2{
   font-size: 1.4rem;
+  margin: 40px auto 20px auto;
 }
 
 header.primary nav{
@@ -46,7 +59,7 @@ header.primary nav{
 
 header.primary nav ul{
   display:flex;
-  flex-direction: row;
+  flex-direction: row;/* get used to using this */
   justify-content: space-between;
   padding: 0;
 }
@@ -58,7 +71,63 @@ header.primary nav ul li{
 header.primary nav a{
   color: #ffffff;
   text-decoration: none;
-  background-color: black;
+  background-color: rgba(0,0,0,.4);
   padding: 8px 16px;
   border-radius: 15px;
+  transition: .5s;
+} 
+
+header.primary nav a:hover,
+header.primary nav a:active
+{
+  background-color: rgba(0,0,0,.8);
+}
+
+#intro{
+  border-bottom: 1px dotted #000000;
+  padding-bottom: 15px; /*adds space between content and border */
+}
+
+#intro h2{
+  color: #a28f70;
+  border-bottom: 1px dotted #000000;
+}
+
+#content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:15px;
+}
+
+#content article.post{
+  box-shadow: 0 4px 8px rgba(0,0,0,.4);/*makes border almost*/
+  padding: 10px;
+  font-size: .8rem;
+  transition: .5s;
+}
+
+#content article.post:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0,.4);/*makes border almost*/
+}
+
+article.post figure{
+  margin:0;
+}
+
+
+
+
+
+/*  ---------------Media Queries-----------------*/
+@media screen and (max-width:600px){
+  header.primary nav ul{
+    flex-direction: column;
+    max-width: 250px;
+    margin: auto;/*always use to center*/
+    gap:10px;/*adds space in between each link*/
+  }
+  header.primary nav ul a{
+    display:block;
+  }
 }
