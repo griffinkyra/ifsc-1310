@@ -98,6 +98,8 @@ header.primary nav a:active
   flex-direction: row;
   justify-content: space-between;
   gap:15px;
+  border-bottom: 1px dotted #000000;
+  padding-bottom: 2.6rem;
 }
 
 #content article.post{
@@ -105,6 +107,7 @@ header.primary nav a:active
   padding: 10px;
   font-size: .8rem;
   transition: .5s;
+  border-bottom: 1px dotted #000000;
 }
 
 #content article.post:hover{
@@ -114,6 +117,29 @@ header.primary nav a:active
 article.post figure{
   margin:0;
 }
+
+time.post-date, figcaption, .post-meta{
+  text-transform:capitalize;
+  color:#674f04;
+  font-size: .9rem;
+}
+
+article.post img{
+  border: solid 2px #674f04;
+  padding: 1.5px;
+  border-radius: 6px;
+}
+
+article.post a{
+  color: #000000;
+  transform: .5s;
+  border-bottom: 1px dotted #000000;
+}
+
+article.post a:hover{
+  text-decoration: none;
+}
+
 
 
 
