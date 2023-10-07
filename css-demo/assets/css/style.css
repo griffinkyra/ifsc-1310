@@ -1,3 +1,4 @@
+
 /*  ---------------Box Sizing----------------- starter code */
 html {
     box-sizing: border-box;
@@ -107,7 +108,7 @@ header.primary nav a:active
   padding: 10px;
   font-size: .8rem;
   transition: .5s;
-  border-bottom: 1px dotted #000000;
+  /*border-bottom: 1px dotted #000000;*/
 }
 
 #content article.post:hover{
@@ -119,9 +120,9 @@ article.post figure{
 }
 
 time.post-date, figcaption, .post-meta{
-  text-transform:capitalize;
+  text-transform: uppercase;
   color:#674f04;
-  font-size: .9rem;
+  font-size: .8rem;
 }
 
 article.post img{
@@ -131,15 +132,51 @@ article.post img{
 }
 
 article.post a{
-  color: #000000;
+  color: #0f0c01;
   transform: .5s;
-  border-bottom: 1px dotted #000000;
 }
 
 article.post a:hover{
   text-decoration: none;
 }
 
+aside[role="complementary"]{
+  background-color: #a28f70;
+  color: #674f04;
+  padding: 40px;
+}
+
+aside div.container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+aside div .container p{
+  line-height: 5;
+}
+
+article.widget a:last-of-type{ /*targets last of type since a lot things have the same titles*/
+  color: #fff;
+  text-align: right;
+  display: block;
+  margin-top: 20px;
+}
+
+aside .widget footer {
+  display: none;
+}
+
+#colophon {
+  background: #674f04;
+  color: #fff;
+}
+
+#colophon h6{
+  padding:20px;
+  margin: 0;
+  text-align: center;
+}
 
 
 
@@ -155,5 +192,16 @@ article.post a:hover{
   }
   header.primary nav ul a{
     display:block;
+  }
+  #content{
+    flex-direction: column;
+  }
+
+  #content img{
+    display: block;
+    margin: 20px auto;
+  }
+  aside .container{
+    flex-direction: column;
   }
 }
