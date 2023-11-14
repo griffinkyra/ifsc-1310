@@ -87,8 +87,8 @@ header.primary h1{
 }
 
 header.primary a{
-  color:#000000; 
-  text-decoration:none;
+  font-size: 2.4rem;
+  margin:20px;
 }
 
 header.primary h2{

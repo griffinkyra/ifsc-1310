@@ -1,0 +1,30 @@
+header.primary h1{
+    text-align: center;
+    color: red;
+}
+
+header.primary nav ul{
+    display:flex;
+    flex-direction: row;/* get used to using this */
+    justify-content: space-between;
+    padding: 0;
+}
+
+header.primary nav ul li{
+    list-style-type: none;
+}
+
+header.primary nav a{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: rgba(0,0,0,.4);
+    padding: 8px 16px;
+    border-radius: 15px;
+    transition: .5s;
+} 
+
+header.primary nav a:hover,
+header.primary nav a:active
+{
+    background-color: rgba(0,0,0,.8);
+}
