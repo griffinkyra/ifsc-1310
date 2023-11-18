@@ -12,7 +12,7 @@ img{
     max-width: 100%;/*auto sizes all images iaw screen size*/
   }
 body{
-    background-color: #352961;
+    background-color: #ffffff;
 }
 
 h2{
@@ -24,6 +24,11 @@ h2{
 #homeArticles h2{
     
     text-decoration: underline;
+}
+
+header figure img{
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 #homeArticles {
     display: flex;
@@ -55,7 +60,7 @@ article.homePost{
     margin: auto;  
     padding: 15px;
     text-align: left;
-    color: #f6e5e5;
+    color: #757a79;
   }
 
 p{
@@ -82,7 +87,7 @@ article.faq-post p{
     font-weight: none;
     margin: auto;
     margin-bottom: 25px;
-    color: #f6e5e5;
+    color: #757a79;
     font-weight: normal;
 }
 #faqArticles {
@@ -100,11 +105,11 @@ article.faq-post p{
     text-decoration: underline;
 }
 #historyArticles p{
-    color: #f6e5e5;
+    color: #757a79;
     font-weight: normal;
 }
 table{
-    color: #f6e5e5;
+    color: #757a79;
     margin-top: 150px;
     margin: auto;
     padding: auto;
@@ -113,10 +118,12 @@ table{
 table caption{
     font-size: 60px;
     text-decoration: solid;
+    color: #000000;
 }
 table tr th{
     font-size: 25px;
     text-decoration: solid;
+    color: #e6b2c6;
 }
 .historyPost figure img{
     border-image:stretch;
@@ -263,7 +270,7 @@ header.faqPrimary nav a:active
 
 footer{
     font-size: 25px;
-    color: #f6e5e5;
+    color: #e6b2c6;
 }
 
 
