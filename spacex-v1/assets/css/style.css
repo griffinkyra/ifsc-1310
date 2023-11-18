@@ -138,6 +138,8 @@ table tr th{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    margin-top: none;
+    margin-bottom: none;
 }
 
 
