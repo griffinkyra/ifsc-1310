@@ -12,23 +12,24 @@ img{
     max-width: 100%;/*auto sizes all images iaw screen size*/
   }
 body{
-    background-color: #ffffff;
+    background-color: #e0ebeb;
+    margin: 100px;
 }
 
 h2{
     font-size: 1.8rem;
-    color: #e6b2c6;
+    color: /*#e6b2c6;*/#1d556f;
     text-transform: uppercase;
     text-align: left;
 }
 #homeArticles h2{
     
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 header figure img{
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 #homeArticles {
     display: flex;
@@ -40,7 +41,7 @@ header figure img{
 
 }
 #homeArticles article.home-post{
-    box-shadow: 0 4px 8px rgba(0,0,0,.4);/*makes border almost*/
+    /*box-shadow: 0 4px 8px rgba(0,0,0,.4);/*makes border almost*/
     padding: 10px;
     font-size: .8rem;
     transition: .5s;
@@ -50,7 +51,7 @@ header figure img{
 }
 
 article.homePost{
-    box-shadow: 0 4px 8px rgba(0,0,0,.4);/*makes border almost*/
+    /*box-shadow: 0 4px 8px rgba(0,0,0,.4);/*makes border almost*/
     padding: 10px;
     font-size: .8rem;
     transition: .5s;
@@ -61,11 +62,11 @@ article.homePost{
     padding: 15px;
     text-align: left;
     color: #757a79;
+    font-weight: none;
   }
 
 p{
     font-size: 1.5rem;
-    font-weight: bold;
 }
 header.homePrimary img{
     margin: none;
@@ -78,10 +79,9 @@ header.homePost img{
 
 article.faq-post h3{
     font-size: 1.9rem;
-    color: #e6b2c6;
+    color: #1d556f;
     margin:auto;
     margin-bottom: 50px;
-    text-decoration: underline;
 }
 article.faq-post p{
     font-weight: none;
@@ -99,10 +99,9 @@ article.faq-post p{
 
 }
 .faq-post{
-    box-shadow: 0 8px 16px rgba(0,0,0,.4);
+   /* box-shadow: 0 8px 16px rgba(0,0,0,.4);*/
 }
 #historyArticles h2{
-    text-decoration: underline;
 }
 #historyArticles p{
     color: #757a79;
@@ -123,7 +122,7 @@ table caption{
 table tr th{
     font-size: 25px;
     text-decoration: solid;
-    color: #e6b2c6;
+    color: #000000;
 }
 .historyPost figure img{
     border-image:stretch;
@@ -152,16 +151,16 @@ table tr th{
 
 /*hovers*/
 #homeArticles article:hover{
-    box-shadow: 0 16px 32px rgba(0,0,0,.4);/*makes border almost*/
+   /* box-shadow: 0 16px 32px rgba(0,0,0,.4);/*makes border almost*/
 }
 #homeArticles article.homePost:hover{
-    box-shadow: 0 16px 32px rgba(0,0,0,.4);/*makes border almost*/
+    /*box-shadow: 0 16px 32px rgba(0,0,0,.4);/*makes border almost*/
 }
 header h2:hover{
-    box-shadow: 0 16px 32px rgba(0,0,0,.4);/*makes border almost*/
+    /*box-shadow: 0 16px 32px rgba(0,0,0,.4);/*makes border almost*/
 }
 #faqArticles:hover{
-    box-shadow: 0 16px 32px rgba(0,0,0,.4);/*makes border almost*/
+    /*box-shadow: 0 16px 32px rgba(0,0,0,.4);/*makes border almost*/
 }
 
 
@@ -272,7 +271,7 @@ header.faqPrimary nav a:active
 
 footer{
     font-size: 25px;
-    color: #e6b2c6;
+    color: #000000;
 }
 
 
